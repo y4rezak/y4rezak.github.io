@@ -1,0 +1,360 @@
+body{
+    margin: 30px 70px 0 70px;
+    background-color: #f2f2f2;
+}
+header{
+    width: 100%;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+}
+.media{
+    height: 40px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    border: 1px solid rgb(196, 195, 195);
+    border-bottom: none;
+}
+.media > a{
+    text-decoration: none;
+    padding: 0 5px;
+}
+.media-vk{
+    color: #2d68b6;
+}
+.media-instagram{
+    color: black;
+}
+.media-telegram{
+    color: #3c86e7;
+}
+.media-vk:hover{
+    color: #4284da;
+}
+.media-instagram:hover{
+    color: rgb(95, 95, 95);
+}
+.media-telegram:hover{
+    color: #4c97fa;
+}
+.companyName{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 45px;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
+    margin-top: 40px;
+}
+.companyName > sup{
+    font-size: 30px;
+}
+.imgLogo{
+    width: 360px;
+}
+.logo{
+    height: 257px;
+    display: flex;
+    padding: 10px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgb(196, 195, 195);
+    background: url(../img/bg-logo.jpg);
+    background-size: 100%;
+    background-position: center;
+    border-bottom: none;
+}
+nav{
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgb(196, 195, 195);
+    border-top: none;
+}
+.navigation{
+    display: flex;
+}
+.navigation > a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.down-icon{
+    margin-left: 10px;
+}
+.navigation > a:hover{
+    background-color: orangered;
+}
+.search-btn{
+    color: rgb(224, 222, 222);
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+}
+.search-btn:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.search-input{
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media 1020px */
+@media screen and (max-width: 1020px){
+    header{
+        height: 305px;
+    }
+    .imgLogo{
+        width: 260px;
+    }
+    .logo{
+        height: 200px;
+    }
+    .companyName{
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    .companyName > sup{
+        font-size: 25px;
+    }
+    .navigation > a{
+        font-size: 12px;
+    }
+    .search-input{
+        width: 50px;
+    }
+
+}
+
+/* media 840px */
+@media screen and (max-width: 840px){
+    header{
+        height: 300px;
+    }
+    .media{
+        height: 30px;
+        padding-right: 25px;
+    }
+    .imgLogo{
+        width: 200px;
+    }
+    .logo{
+        height: 150px;
+    }
+    .companyName{
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    .companyName > sup{
+        font-size: 20px;
+    }
+    nav{
+        height: 85px;
+    }
+    .navigation{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigation > a{
+        padding: 7px 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .search-input{
+        width: 50px;
+    }
+
+}
+
+/* media 590px */
+@media screen and (max-width: 590px){
+    header{
+        height: 315px;
+    }
+    .media{
+        height: 30px;
+        padding-right: 20px;
+    }
+    .imgLogo{
+        width: 140px;
+    }
+    .logo{
+        height: 100px;
+    }
+    .companyName{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .companyName > sup{
+        font-size: 15px;
+    }
+    nav{
+        height: 140px;
+        justify-content: center;
+    }
+    .navigation{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigation > a{
+        font-size: 14px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input{
+        width: 60%;
+    }
+
+}
+
+
+
+/* media 440px */
+@media screen and (max-width: 440px){
+    header{
+        height: 275px;
+    }
+    .media{
+        height: 30px;
+        padding-right: 15px;
+    }
+    .media{
+        height: 30px;
+    }
+    .imgLogo{
+        width: 100px;
+    }
+    .logo{
+        height: 70px;
+    }
+    .companyName{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .companyName > sup{
+        font-size: 12px;
+    }
+    nav{
+        height: 150px;
+        justify-content: center;
+    }
+    .navigation{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navigation > a{
+        font-size: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input{
+        width: 60%;
+    }
+
+}
+
+
+/* media 370px */
+@media screen and (max-width: 370px){
+    header{
+        height: 270px;
+    }
+    .media{
+        height: 30px;
+        padding-right: 10px;
+    }
+    .imgLogo{
+        width: 70px;
+    }
+    .logo{
+        padding-left: 30px;
+        height: 50px;
+    }
+    .companyName{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .companyName > sup{
+        font-size: 10px;
+    }
+    nav{
+        height: 165px;
+        justify-content: center;
+    }
+    .navigation{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navigation > a{
+        font-size: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input{
+        width: 30%;
+    }
+
+}
